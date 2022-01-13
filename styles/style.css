@@ -20,7 +20,6 @@ main {
 }
 hr {
   border: 1px solid #d1d1d1;
-
 }
 
 
@@ -187,6 +186,20 @@ width: 100%;
  /* Mobile Device */
 
  @media only screen and (max-width:688px){
+  
+  .logo{
+    display: none;
+    
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+  }
+   
+
+
   .container{
     width: 100%;
   }
