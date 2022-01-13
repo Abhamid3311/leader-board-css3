@@ -23,6 +23,48 @@ hr {
 
 }
 
+
+/* header section */
+
+header{
+  background: #562eff;
+  width: 100%;
+  height: 90px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  position: relative;
+  left: 150px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.logo-img{
+  width: 30px;
+  height: 35px;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -150px;
+  
+}
+ul li{
+  margin: 5px;
+}
+ul li a,.logo-id{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
+}
+
 /* Top Player */
 
 .section-titel {
@@ -129,7 +171,6 @@ width: 100%;
   font-weight: 600;
   font-size: 14.6913px;
   line-height: 20px;
-  
   background-color:#eebfb456 ;
   border-radius: 30px;
   padding:8px 10px;
@@ -137,3 +178,34 @@ width: 100%;
   margin-bottom: 5px;
 
 }
+
+
+/*---------------
+ Media Queries
+ ----------------*/
+
+ /* Mobile Device */
+
+ @media only screen and (max-width:688px){
+  .container{
+    width: 100%;
+  }
+  .players,.courses,.blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,.blog{
+    flex-direction: column;
+  }
+ }
+
+
+ /* Tablet device */
+
+ @media only screen and (min-width:688px) and (max-width:980px){
+  .container{
+    width: 100%;
+  }
+  .players,.courses,.blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ }
